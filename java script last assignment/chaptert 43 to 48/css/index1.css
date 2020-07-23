@@ -1,0 +1,21 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.bg-info >a{
+    color: green !important;
+}
+.card-brand{
+    color: white;
+}
+
+/* index 2 style */
+.btn-lg{
+    margin-left: 10%;
+}
+ul li{
+    list-style-type: none;
+}
+.text-info{
+    font-size: 18px;
+    font-weight: bold;
+}

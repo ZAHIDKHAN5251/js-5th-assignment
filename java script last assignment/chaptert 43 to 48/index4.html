@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    
+    <title>Document</title>
+    <style>
+        *{
+    font-family: 'Poppins', sans-serif;
+}
+.btn-lg{
+    margin: 0 auto;
+}
+.rounded{
+    margin-left: 40%;
+    width: 20%;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-primary text-center">Increase and Decrease Conter</h1>
+        <br />
+        <br />
+        <div class="text-center border border-primary rounded" id="show">0</div>
+        <br />
+        <div class="row text-center">
+            <div class="col-md-12"> 
+                <input type="button" onClick="increase()" value="Increase" class="btn btn-lg btn-outline-success" style="margin: 0 auto;"/>
+                <input type="button" onClick="decrease()" value="Decrease" class="btn btn-lg btn-outline-danger"/>
+            </div>
+        </div>
+    </div> 
+<script src="css/jquery.min.js"></script>
+<script src="css/bootstrap.min.js"></script>
+    <script src="css/app.js"></script>
+</body>
+</html>

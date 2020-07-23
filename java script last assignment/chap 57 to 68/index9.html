@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+ <style>
+ 	.btn{
+ 		background: aqua;
+ 		margin-left: 80px;
+ 		margin-top: 5px;
+ 	}
+ 	#para{
+         color: red;
+         font-size: 20px;
+         font-weight: bold;
+ 	}
+ 	#para1{
+         color: blue;
+         font-size: 20px;
+         font-weight: bold;
+ 	}
+ 	#para2{
+         color: green;
+         font-size: 20px;
+         font-weight: bold;
+ 	}
+ </style>
+</head>
+<body>
+
+<div>
+ <h1> DOM </h1>
+  <div id="form-content" class="content">
+  	<p id="biodata">First name </p>
+   <label for="first-name">First Name</label>
+    <input type="text" id="first-name" />
+     <label for="last-name">Last Name</label> 
+     <input type="text" id="last-name" />
+      <label for="email">Email</label> 
+      <input type="text" id="email" /><br>
+      	<button class="btn bg-warning" onclick="myFunction()">Get now</button>
+       </div> 
+     <!--------------i : What is node type of  element having id “form-content”----------->
+       <div id="form-content" class="content"><br><br>
+       	<p id="para"> i : What is node type of  element having id “form-content”</p>
+  	<p id="biodata">First name </p>
+   <label for="first-name">First Name</label>
+    <input type="text" id="first-name" />
+     <label for="last-name">Last Name</label> 
+     <input type="text" id="last-name" />
+      <label for="email">Email</label> 
+      <input type="text" id="email" /><br>
+      	 <button onclick="myFunc()" class="btn"> node type of  element having id “form-content”. </button>
+         <p id="demo"></p>
+       </div> 
+         <!--------------i : What is node type of  element having id “form-content”----------->
+
+         <!--------------i :ii. Show node type of element having id “lastName” and its child node. ----------->
+         <div id="nodElement"><br>
+         	<p id="para1"> ii. Show node type of element having id “lastName” and its child node.</p>
+          <label for="last-name">Last Name</label> 
+            <input type="text" id="last-name" /><br>
+             <button onclick="myFun()" class="btn">  node type LAST-NAME </button>
+             <p id="demo1"></p>
+            </div><br>
+
+     <!--------------iii. Update child node of element having id “lastName”. ----------->
+           <div id="nodElement"><br>
+         	<p id="para2"> iii. Update child node of element having id “lastName”.</p>
+          <label for="last-name">Last Name</label> 
+            <input type="text" id="last-name" /><br>
+             <button onclick="myUpdate()" class="btn">  Update child node </button>
+             <p id="demo2"></p>
+            </div><br>
+
+
+       <div id="main-content" class="content">
+       	<p id="para4"> iv. Get First and last child of id “main-content”. </p>
+        <p class="render"> First Name : Alex</p> 
+        <p class="render" id="lastName">Last Name: Bank</p>
+         <p class="render"> Email : alexbank@example.com</p>
+          <p class="render"> Country : Pakistan </p> <p class="render"> contact : +92 300 1234567</p>
+           <button onclick="myFirstLast()" class="btn"> Get First and last child </button>
+         <p id="demo3"></p>
+           </div>
+            </div> 
+            <br><br> <br><br> <br><br>
+
+
+   <script src="app.js">
+   
+   </script>         
+
+</body>
+</html>

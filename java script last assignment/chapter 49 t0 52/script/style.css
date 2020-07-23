@@ -1,0 +1,25 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 20px 0 20px 0;
+}
+label{
+    font-weight: bold;
+}
+.container{
+    padding-bottom: 5px;
+}
+.hide{
+    visibility: hidden;
+}
+.show{
+    visibility: visible;
+}
+span{
+    text-transform: capitalize;
+    padding-left: 3px;
+    color: #CC0000;
+    font-size: 17px;
+    text-decoration: underline;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="script/style.css">
+    <link rel="stylesheet" href="script/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+ <!-- Header Container -->
+ <div class="Container">
+    <br />
+    <h1 class="text-center text-primary">Deleting And Updating Names</h1>
+</div>
+<br />
+
+<!-- Main Container -->
+<div class="container-fluid">
+    <!-- Input Div of UpdatIng Name -->
+    <div class="update-section" id="update-part">
+        <h3>Update Please</h3>
+        <input type="text" autofocus id="show-text" class="form-control"/>      
+    </div>
+    <br />
+    <!-- List of Record -->
+<table class="table table-hover table-bordered text-center">
+    
+    <!-- List of 1st Name with Buttons -->
+    <tr id="one">
+        <td id="text-1"><h4 class="text-secondary">Ali Mughal</h4></td>
+        <td><input type="button" class="btn btn-danger" value="DELETE" id="delete1" onclick="dle('one')"/></td>
+        <td><input type="button" class="btn btn-primary" value="EDIT" id="edit1" onClick="edit('btn1','text-1')"/></td>
+        <td class="update-btn" id="btn1"><input type="submit" class="btn btn-success" value="UPDATE" onClick="update('text-1', 'btn1', 'update-part')"/></td>
+    </tr>
+
+    <!-- List of 2nd Name with Buttons -->
+    <tr id="two">
+        <td id="text-2"><h4 class="text-secondary">Basit</h4></td>
+        <td><input type="button" class="btn btn-danger" value="DELETE" id="delete2" onclick="dle('two')"/></td>
+        <td><input type="button" class="btn btn-primary" value="EDIT" id="edi2" onClick="edit('btn2','text-2')"/></td>
+        <td class="update-btn" id="btn2"><input type="submit" class="btn btn-success" value="UPDATE" onClick="update('text-2', 'btn2', 'update-part')"/></td>
+    </tr>
+
+    <!-- List of 3rd Name with Buttons -->
+    <tr id="three">
+        <td id="text-3"><h4 class="text-secondary">Ghouse</h4></td>
+        <td><input type="button" class="btn btn-danger" value="DELETE" id="delete3" onclick="dle('three')"/></td>
+        <td><input type="button" class="btn btn-primary" value="EDIT" id="edit3" onClick="edit('btn3','text-3')"/></td>
+        <td class="update-btn" id="btn3"><input type="submit" class="btn btn-success" value="UPDATE" onClick="update('text-3', 'btn3', 'update-part')"/></td>
+    </tr>
+
+    <!-- List of 4th Name with Buttons -->
+    <tr id="four">
+        <td id="text-4"><h4 class="text-secondary">Dr Zia</h4></td>
+        <td><input type="button" class="btn btn-danger" value="DELETE" id="delete4" onclick="dle('four')"/></td>
+        <td><input type="button" class="btn btn-primary" value="EDIT" id="edit4" onClick="edit('btn4','text-4')"/></td>
+        <td class="update-btn" id="btn4"><input type="submit" class="btn btn-success" value="UPDATE" onClick="update('text-4',  'btn4', 'update-part')"/></td>
+    </tr>
+
+    <!-- List of 5th Name with Buttons -->
+    <tr id="five">
+        <td id="text-5"><h4 class="text-secondary">M.Imran</h4></td>
+        <td><input type="button" class="btn btn-danger" value="DELETE" id="delete5" onclick="dle('five')"/></td>
+        <td><input type="button" class="btn btn-primary" value="EDIT" id="edit5" onClick="edit('btn5','text-5')"/></td>
+        <td class="update-btn" id="btn5"><input type="submit" class="btn btn-success" value="UPDATE" onClick="update('text-5',  'btn5', 'update-part')"/></td>
+    </tr>
+    </table>
+
+    <!-- Alert Message -->
+    <span class="alert-success" id="span"></span>
+</div>
+
+<!-- JS file Link -->
+<script src="script/app3.js"></script>
+</body>
+</html>
